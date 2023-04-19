@@ -1,4 +1,4 @@
-# Zadanie 1
+# Zadanie 1 
 ---
 ## 1. Treść polecenia
 #### Zaimplementuj funkcję `isColliding` zwracającą `true` jeśli dwa trójkąty w przestrzeni 2D kolidują ze sobą. Następnie napisz wizualizator tej kolizji. Trójkąty powinny być widoczne na ekranie i co najmniej jeden z nich możliwy do sterowania przez użytkownika. Kolizja powinna być w jakiś sposób zasygnalizowana użytkownikowi.

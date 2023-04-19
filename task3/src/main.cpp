@@ -1,6 +1,5 @@
 #include <iostream>
 #include <algorithm>
-#include <iterator>
 
 int main() {
     std::string tmp;

@@ -184,18 +184,18 @@ public:
 
         Position getPoint(const chrono::milliseconds deltaTime) {
                 static bool back = false;
-                static float x = 0.0f;
-                static float y = 0.0f;
+                static double x = 0.0f;
+                static double y = 0.0f;
 
                 switch(back) {
                         case false:
                                 if(position.x < 40) {
-                                        x += static_cast<float>((deltaTime).count()) / 50;
-                                        position.x = static_cast<int>(std::min(40.0f, x));
+                                        x += static_cast<double>((deltaTime).count()) / 50;
+                                        position.x = static_cast<int>(std::min(40.0, x));
                                 }
                                 else if (position.y < 10) {
-                                        y += static_cast<float>(deltaTime.count()) / 300;
-                                        position.y = static_cast<int>(std::min(10.0f, y));
+                                        y += static_cast<double>(deltaTime.count()) / 300;
+                                        position.y = static_cast<int>(std::min(10.0, y));
                                 }
                                 else {
                                         back = true;
@@ -208,9 +208,9 @@ public:
 
                         case true:
                                 if(position.y > 0) {
-                                        y -= static_cast<float>(deltaTime.count()) / 20;
+                                        y -= static_cast<double>(deltaTime.count()) / 20;
                                         if(y < 0) {
-                                                x -= static_cast<float>(deltaTime.count()) / 20;
+                                                x -= static_cast<double>(deltaTime.count()) / 20;
                                                 position.x = x;
                                                 position.y = 0;   
                                         }
@@ -219,8 +219,8 @@ public:
                                         }
                                 }
                                 else if(position.x > 0) {
-                                        x -= static_cast<float>(deltaTime.count()) / 20;
-                                        position.x = static_cast<int>(std::max(0.0f, x));
+                                        x -= static_cast<double>(deltaTime.count()) / 20;
+                                        position.x = static_cast<int>(std::max(0.0, x));
                                 }
                                 else {
                                         back = false;

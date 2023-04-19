@@ -10,11 +10,11 @@ Kompilacja odbywa się z użyciem narzędzia CMake. Używałem tutaj kompilatora
 
 Aby prawidłowo zbudować projekt, należy przejść do głównego katalogu oraz uruchomić skrypt `setup.bat`, który uruchamia polecenie `cmake`.
 
-1. `cd ./Novomatic_internship.cpp`
+1. `cd ./Novomatic_internship_cpp`
 
 2. `./setup.bat`
 
 Można również uruchomić kompilację ręcznie, przechodząc do głównego folderu i wydając komendę `cmake`.
 
-1. `cd ./Novomatic_internship.cpp`
+1. `cd ./Novomatic_internship_cpp`
 2. `cmake -S . -B build -G "MinGW Makefiles" -DCMAKE_BUILD_TYPE=Release`

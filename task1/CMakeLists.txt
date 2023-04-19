@@ -16,7 +16,6 @@ list(APPEND LIBS
 
 file(GLOB TASK1_SRC CONFIGURE_DEPENDS
     ${SRC_PATH}/*cpp
-    # ${SRC_PATH}/imgui/*cpp
 )
 
 add_executable(task1 ${TASK1_SRC})

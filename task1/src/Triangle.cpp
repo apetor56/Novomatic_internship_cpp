@@ -80,11 +80,6 @@ bool Triangle::isPointInside(const Triangle& t1, const Triangle& t2) {
     auto position_t1 = t1.getPosition();
     auto position_t2 = t2.getPosition();
 
-    // std::cout << position_t1.at(0).x << " " << position_t1.at(0).y << '\n';
-    // std::cout << position_t1.at(1).x << " " << position_t1.at(1).y << '\n';
-    // std::cout << position_t1.at(2).x << " " << position_t1.at(2).y << '\n';
-    // std::cout << std::string(50, '-') << '\n';
-
     glm::vec3 AB = position_t1.at(1) - position_t1.at(0);
     glm::vec3 BC = position_t1.at(2) - position_t1.at(1);
     glm::vec3 CA = position_t1.at(0) - position_t1.at(2);
@@ -100,7 +95,7 @@ bool Triangle::isPointInside(const Triangle& t1, const Triangle& t2) {
         crossProd_2 = glm::cross(point_t2 - position_t1.at(1), BC);
         crossProd_3 = glm::cross(point_t2 - position_t1.at(2), CA);
 
-        if(crossProd_1.z >= -0.1f && crossProd_2.z >= -0.1f && crossProd_3.z >= -0.1f) {           
+        if(crossProd_1.z >= 0.0f && crossProd_2.z >= 0.0f && crossProd_3.z >= 0.0f) {           
             return true;
         }
     }

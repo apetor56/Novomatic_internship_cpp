@@ -1,7 +1,5 @@
-#include <Triangle.hpp>
-#include <Window.hpp>
-#include <memory>
-#include <thread>
+#include "Triangle.hpp"
+#include "Window.hpp"
 
 int main() {
     try {

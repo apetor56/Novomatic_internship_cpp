@@ -8,6 +8,6 @@
 ## 2. Rozwiązanie
 Czas renderowania i czyszczenia obrazu powodowały, że pixel nie mógł między innymi pokonać całej trasy powrotnej w czasie 1000ms (jeśli weźmiemy pod uwagę poruszanie się tylko o jedno pole). Należało tu więc wykorzystać ten czas, aby przesunąć pixel o odpowiednią liczbę miejsc w przód/tył. Liczba ta była obliczana w następujący sposób:
 
-$$ x += {delta : {czasDrogi \over liczbaPunktów}} $$
+$$x += {delta : {czasDrogi \over liczbaPunktów}}$$
 Podany przykład dotyczy obliczania pozycji `x` w trakcie ruchu do przodu.
 

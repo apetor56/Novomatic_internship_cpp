@@ -7,3 +7,7 @@
 Implementacja funkcji `isColliding(t1, t2)` znajduje się w pliku `Triangle.cpp`. Funkcja ta wykorzystuje funkcję pomocniczą `isPointInside(t1, t2)`, która z wykorzystaniem własności iloczynu wektorowego sprawdza, czy któryś z wierzchołków trójkąta `t2` znajduje się wewnątrz trójkąta `t1`. Funkcja pomocznicza wywoływana jest dwukrotnie, ze zmienioną kolejnością trójkątów, podawanych jako argumenty.
 
 Wizualizację zadania wykonałem za pomocą [napisanych już wcześniej przeze mnie klas](https://github.com/apetor56/Knights-Tour), które implementowały różne działania graficzne wykonywane z użyciem `OpenGL`. Do interakcji z trójkątami wykorzystałem bibliotekę [ImGui](https://github.com/ocornut/imgui). Jeśli dochodzi do kolozji trójkątów, to są one od siebie odsuwane.
+
+<p align="center">
+<img src="https://github.com/apetor56/Novomatic_internship_cpp/blob/master/task1/Animation.gif" width="800" height="600"/>
+</p>
